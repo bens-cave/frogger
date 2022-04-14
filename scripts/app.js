@@ -321,6 +321,7 @@ function init() {
             setTimeout(() => {
               grid.style.backgroundImage = 'url(assets/show_me_boo.gif)'
               audioPlayer.src = 'assets/boo.mov'
+              audioPlayer.loop = false
               audioPlayer.volume = 0.3
               audioPlayer.play()
             }, 3200)
@@ -539,6 +540,7 @@ function init() {
                 audioPlayer.src = 'assets/schwifty.mov'
                 audioPlayer.play()
                 audioPlayer.loop = false
+                audioPlayer.volume = 1
               }, 2900)
               setTimeout(() => {
                 grid.style.backgroundImage = 'url(assets/schwifty.gif)'
