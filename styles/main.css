@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(5, 5, 5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body.redImg {
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  left: 0;
+  opacity: .2;
+  pointer-events: none;
+  background: rgb(246, 140, 140);
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100vw;
+  min-width: 100vw;
+  height: 10vh;
+  min-height: 10vh;
+  padding: 0 12.5vw 0 12.5vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-around;
+  align-self: center;
+  justify-self: center;
+}
+
+header section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-justify: center;
+}
+
+#banner {
+  max-width: 30vw;
+  height: 10vh;
+}
+
+#postbanner {
+  max-width: 30vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+}
+
+header section #piccy {
+  height: 10vh;
+  width: 120px;
+  max-width: 10vw;
+}
+
+#piccy #sun {
+  max-height: 10vh;
+  max-width: 10vw;
+  transform: scaleX(-1);
+}
+
+#banner {
+  height: 10vh;
+  min-height: 10vh;
+  width: 25vw;
+  min-width: 25vw;
+  background-image: url('../assets/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.grid-wrapper {
+  height: 75vh;
+  width: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#startBtn {
+  height: 10%;
+  width: 25%;
+  border-radius: 15px;
+}
+
+#grid {
+  align-items: center;
+  background-image: url('../assets/purple_space.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(5, 5, 5);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  height: 75vh;
+  min-height: 75vh;
+  width: 75vw;
+  justify-content: center;
+  background-blend-mode: brightness(50%);
+}
+
+#grid section {
+  /*border: 1px solid rgb(32, 21, 21);*/
+  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  width: 100%;
+  background-image: url('../assets/start_page.png');
+  /* background-image: url('../assets/show_me.gif'); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 50%;
+}
+
+#grid div {
+  /*border: 1px solid rgb(32, 21, 21);*/
+  flex-grow: 1;
+  height: 10%;
+  max-height: 10%;
+  min-height: 10%;
+  width: 10%;
+  max-width: 10%;
+  min-width: 10%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+#grid div.enemyone {
+  background-image: url('../assets/fly_alien_r.png');
+  background-position: center;
+}
+
+#grid div.enemyoneA {
+  background-image: url('../assets/massive_yellow_alien.png');
+  background-position-x: +50%;
+  background-position-y: +50%;
+  background-size: 100%;
+}
+
+#grid div.enemyoneB {
+  background-image: url('../assets/timepoliceman.png');
+  background-size: 80%;
+  background-position: center;
+}
+
+#grid div.enemytwo {
+  background-image: url('../assets/alien_soldier.png');
+  background-position: center;
+}
+
+#grid div.enemytwoA {
+  background-image: url('../assets/boss.gif');
+  transform: scaleX(-1);
+  background-position: center;
+}
+
+#grid div.frog {
+  background-image: url('../assets/frog_scared_r.png');
+}
+
+#grid div.frogleft {
+  background-image: url('../assets/frog_scared_l.png');
+}
+
+#grid div.frogangryr {
+  background-image: url('../assets/frog_angry_r.png');
+}
+
+#grid div.frogangryl {
+  background-image: url('../assets/frog_angry_l.png');
+}
+
+#grid div.frogsuit {
+  background-image: url('../assets/frog_away.png');
+}
+
+#grid div.frogfire {
+  background-image: url('../assets/frog_fire.png');
+}
+
+#grid div.explosion {
+  background-image: url('../assets/explosion.gif');
+}
+
+#grid div.portal {
+  background-image: url('../assets/portal.gif');
+}
+
+#grid div.redportal {
+  background-image: url('../assets/red_portal.gif');
+}
+
+#grid div.freddy {
+  background-image: url('../assets/freddy.png');
+}
+
+#grid div.suit {
+  background-image: url('../assets/suit.gif');
+}
+
+#grid div.frogaway {
+  background-image: url('../assets/frog_away.png');
+}
+
+#grid div.suitspin {
+  background-image: url('../assets/frog_transform_3.gif');
+}
+
+#grid div.laser {
+  background-image: url('../assets/laserbeam.gif');
+  align-self: center;
+  justify-self: center;
+}
+
+#grid div.enemythree {
+  background-image: url('../assets/actual_frog.png');
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  min-height: 15vh;
+  width: 100vw;
+  min-width: 100vw;
+}
+
+section.froglevel, section.froglives {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  width: 20vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: rgb(5, 5, 5);
+}
+
+section.froglevel span, section.froglives span {
+  text-align: center;
+  text-justify: center;
+  font-size: 2em;
+  }
+
+section.face {
+  height: 15vh;
+  min-height: 15vh;
+  width: 15vw;
+  min-width: 15vw;
+  max-width: 15vw;;
+  background-image: url('');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(5, 5, 5);
+}
